@@ -1,6 +1,6 @@
 [
   {
-    "line": "MarineCargo",
+    "line": "Marine Cargo",
     "policyNumber": "17630212",
     "effDate": "6/30/2026",
     "expDate": "6/30/2027",
@@ -14,7 +14,7 @@
     "lossRatio": 22
   },
   {
-    "line": "GeneralLiability",
+    "line": "General Liability",
     "policyNumber": "4E31292",
     "effDate": "6/30/2026",
     "expDate": "6/30/2027",
@@ -28,7 +28,7 @@
     "lossRatio": 55
   },
   {
-    "line": "WorkersComp",
+    "line": "Workers Comp",
     "policyNumber": "9192371",
     "effDate": "Pending",
     "expDate": "Pending",

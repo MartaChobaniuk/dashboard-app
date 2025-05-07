@@ -7,6 +7,10 @@ import details_img from '../../assets/dashboard/details_button.svg';
 import classNames from 'classnames';
 import { getLossRatioColor } from '../../helpers/getLossRatio';
 import { getLineColor } from '../../helpers/getLineColor';
+import umbrella from '../../assets/accounts/4.png';
+import workers from '../../assets/accounts/3.png';
+import liability from '../../assets/accounts/2.png';
+import marine from '../../assets/accounts/1.png';
 
 export const Policies = () => {
   const [policies, setPolicies] = useState<Policy[]>([]);
@@ -90,16 +94,41 @@ export const Policies = () => {
           {policies.map((policy) => (
             <tr key={policy.policyNumber} className={styles.policies__row}>
               <td className={styles.policies__column}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'start',
+                    padding: '0 8px',
+                    gap: '8px'
+                  }}
+                >
                   <span
+                    className={styles.policies__circle}
                     style={{
                       width: '30px',
                       height: '30px',
                       borderRadius: '50%',
                       backgroundColor: getLineColor(policy.line),
-                      display: 'block',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      padding: '0 2px',
                     }}
-                  ></span>
+                  >
+                    {policy.line === 'Marine Cargo' && (
+                      <img src={marine} className={styles.policies__img} />
+                    )}
+                    {policy.line === 'General Liability' && (
+                      <img src={liability} className={styles.policies__img} />
+                    )}
+                    {policy.line === 'Workers Comp' && (
+                      <img src={workers} className={styles.policies__img} />
+                    )}
+                    {policy.line === 'Umbrella' && (
+                      <img src={umbrella} className={styles.policies__img} />
+                    )}
+                  </span>
                   {policy.line}
                 </div>
               </td>
