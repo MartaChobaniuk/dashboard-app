@@ -1,0 +1,59 @@
+@use "../../utils/mixins" as mixin;
+@use "../../utils/variables" as var;
+
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  gap: 10px;
+  padding-top: 20px;
+
+  @include mixin.on-tablet {
+    grid-template-areas:
+      "workQueue workQueue workQueue"
+      "portfolioGoals portfolioGoals quickActions "
+      "portfolioGoals portfolioGoals marketIntelligence"
+      "myAccounts myAccounts myAccounts";
+    grid-template-columns: 0.7fr 0.7fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  @include mixin.on-tablet-2 {
+    grid-template-areas:
+      "workQueue workQueue workQueue"
+      "portfolioGoals portfolioGoals quickActions "
+      "portfolioGoals portfolioGoals marketIntelligence"
+      "myAccounts myAccounts myAccounts";
+    grid-template-columns: 0.7fr 0.7fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  @include mixin.on-desktop {
+    grid-template-areas:
+      "workQueue portfolioGoals quickActions"
+      "workQueue portfolioGoals marketIntelligence"
+      "myAccounts myAccounts myAccounts";
+    grid-template-columns: 2.2fr 0.8fr 0.8fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  &__queue {
+    grid-area: workQueue;
+  }
+
+  &__accounts {
+    grid-area: myAccounts;
+  }
+
+  &__goals {
+    grid-area: portfolioGoals;
+  }
+
+  &__actions {
+    grid-area: quickActions;
+  }
+
+  &__intelligence {
+    grid-area: marketIntelligence;
+  }
+}

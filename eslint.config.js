@@ -7,17 +7,15 @@ import tsParser from '@typescript-eslint/parser'
 
 export default [
   { ignores: ['dist'] },
-  // Конфігурація для JavaScript та JSX файлів
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: {
         ...globals.browser,
-        ...globals.node, // Додаємо глобальні змінні Node.js, якщо потрібно
+        ...globals.node,
       },
       parserOptions: {
-        // Переміщено сюди
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
         sourceType: 'module',
@@ -33,7 +31,6 @@ export default [
       'no-unused-vars': ['warn', { varsIgnorePattern: '^[A-Z_]' }],
     },
   },
-  // Конфігурація для TypeScript та TSX файлів
   {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
@@ -43,7 +40,6 @@ export default [
       },
       parser: tsParser,
       parserOptions: {
-        // Переміщено сюди
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
         sourceType: 'module',
@@ -52,8 +48,8 @@ export default [
     },
     plugins: {
       '@typescript-eslint': tsPlugin,
-      'react-hooks': reactHooks, // Також застосовуємо правила хуків до TSX
-      'react-refresh': reactRefresh, // Також застосовуємо react-refresh до TSX
+      'react-hooks': reactHooks,
+      'react-refresh': reactRefresh,
     },
     rules: {
       ...tsPlugin.configs.recommended.rules,
@@ -64,7 +60,6 @@ export default [
       'react/react-in-jsx-scope': 'off',
     },
   },
-  // Конфігурація для файлів конфігурації (наприклад, vite.config.js)
   {
     files: ['vite.config.js', 'eslint.config.js'],
     languageOptions: {
@@ -74,7 +69,6 @@ export default [
         ...globals.node,
       },
       parserOptions: {
-        // Переміщено сюди
         ecmaVersion: 'latest',
         sourceType: 'module',
       },

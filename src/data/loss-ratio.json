@@ -1,0 +1,11 @@
+{
+  "name": "Portfolio Loss Ratio Target",
+  "colorThresholds": {
+    "good": "45%",
+    "warning": "30%",
+    "critical": "25%"
+  },
+  "currentValue": 48.2,
+  "targetValue": 55,
+  "colorOrder": [ "good", "warning", "critical"]
+}

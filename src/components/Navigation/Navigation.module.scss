@@ -1,0 +1,76 @@
+@use "../../utils/mixins" as mixin;
+@use "../../utils/variables" as var;
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 0;
+  position: relative;
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+    overflow: hidden;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var.$button-text-white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px;
+    border-radius: 30px;
+    background-color: var.$button-bg;
+    border: 0.5px solid var.$button-text-white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+
+    &--active {
+      background-color: var.$accent-color;
+      color: var.$button-text-black;
+    }
+  }
+
+  &__buttons {
+    background-color: var.$bg-main;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 8px;
+
+    position: absolute;
+    right: 0;
+    z-index: 10;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var.$button-text-white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px;
+    border-radius: 30px;
+    background-color: var.$button-bg;
+    border: 0.5px solid #313b54;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &--active {
+      background-color: var.$accent-color;
+      color: var.$button-text-black;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@use "../../utils/mixins" as mixin;
+@use "../../utils/variables" as var;
+
+.policy {
+  width: max-content;
+  background-color: #252a3d;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+  }
+
+  &__name {
+    color: var.$text-main;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__icon {
+    width: 25px;
+    height: 28px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+
+  &__label {
+    color: #8a8b98;
+    margin-right: 4px;
+  }
+
+  &__value {
+    color: #8a8b98;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Renewal retention",
+  "colorThresholds": {
+    "critical": "25%",
+    "warning": "30%",
+    "good": "20%",
+    "warning2": "25%"
+  },
+  "currentValue": 88,
+  "targetValue": "85 - 90",
+  "colorOrder": ["critical", "warning", "good", "warning2"]
+}

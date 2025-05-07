@@ -1,0 +1,40 @@
+{
+  "overallScore": 82,
+  "overallRating": "Very Strong",
+  "historicalTrendData": [
+    { "month": "Jan", "value": 50 },
+    { "month": "Feb", "value": 80 },
+    { "month": "Mar", "value": 67 },
+    { "month": "Apr", "value": 83 },
+    { "month": "Now", "value": 81 }
+  ],
+  "positionData": {
+    "yourScore": 82,
+    "marketAvg": 68,
+    "topCompetitor": 88
+  },
+  "increasingWinnabilityFactors": [
+    { "id": 1, "label": "Brokers Relationship", "value": 26 },
+    { "id": 2, "label": "Loss history", "value": 22 },
+    { "id": 3, "label": "Industry growth", "value": 18 },
+    { "id": 4, "label": "Multiline opportunity", "value": 11 }
+  ],
+  "decreasingWinnabilityFactors": [
+    { "id": 1, "label": "Premium pricing", "value": 24 },
+    { "id": 2, "label": "Total exposure", "value": 18 },
+    { "id": 3, "label": "Loss ratio trend", "value": 13 },
+    { "id": 4, "label": "Market competition", "value": 5 }
+  ],
+  "aiRecommendations": [
+    {
+      "id": 1,
+      "label": "Offer 5% premium discount in exchange for 3-year commitment",
+      "text": "Historical win rate increases 24% with multi-year commitments. Current pricing is 12% above market average. This approach would strengthen retention while maintaining adequate profitability."
+    },
+    {
+      "id": 2,
+      "label": "Propose risk control services for cargo handling procedures",
+      "text": "Can potentially reduce loss ratio by 15-20% based on similar maritime accounts in your portfolio. Specific focus on loading/unloading operations would address the most frequent claim scenarios."
+    }
+  ]
+}

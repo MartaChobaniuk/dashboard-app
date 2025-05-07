@@ -1,0 +1,105 @@
+@use "../../utils/mixins" as mixin;
+@use "../../utils/variables" as var;
+
+.account {
+  &__title {
+    color: var.$text-main;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &__double-block {
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 20px;
+
+    @include mixin.on-tablet {
+      @include mixin.flex(flex, start, space-between, column);
+    }
+
+    @include mixin.on-tablet-2 {
+      @include mixin.flex(flex, start, space-between, column);
+    }
+
+    @include mixin.on-desktop {
+      @include mixin.flex(flex, center, space-between, row);
+    }
+  }
+
+  &__status {
+    @include mixin.on-tablet {
+      width: 100%;
+    }
+
+    @include mixin.on-tablet-2 {
+      width: 100%;
+    }
+
+    @include mixin.on-desktop {
+      width: 50%;
+    }
+  }
+
+  &__compliance {
+    @include mixin.on-tablet {
+      width: 100%;
+    }
+
+    @include mixin.on-tablet-2 {
+      width: 100%;
+    }
+
+    @include mixin.on-desktop {
+      width: 50%;
+    }
+  }
+
+  &__compliance-shell {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    gap: 20px;
+  }
+
+  &__compliance-button {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 6px;
+    transition:
+      transform 0.3s linear,
+      background-color 0.3s linear;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: #052a66;
+      transition:
+        transform 0.3s linear,
+        background-color 0.3s linear;
+    }
+  }
+
+  &__block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    color: var.$text-main;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  &__link-detail {
+    color: var.$accent-color;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}

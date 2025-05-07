@@ -1,0 +1,33 @@
+@use "../../utils/mixins" as mixin;
+@use "../../utils/variables" as var;
+
+.portfolioGoals {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #313b54;
+  background-color: #1e2233;
+  color: var.$text-main;
+
+  @include mixin.on-tablet {
+    height: 640px;
+  }
+
+  @include mixin.on-tablet-2 {
+    height: 555px;
+  }
+
+  @include mixin.on-desktop {
+    height: 560px;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__shell {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "originator": {
+      "initials": "SM",
+      "name": "Sam Masters"
+    },
+    "clientLine": {
+      "client": "NAMEX Tech Solutions",
+      "line": "Cyber Liability"
+    },
+    "type": "Underwriter Referral",
+    "status": {
+      "label": "New",
+      "color": "3B82F6"
+    },
+    "created": "04/16/2025"
+  },
+  {
+    "originator": {
+      "initials": "AW",
+      "name": "Annalise Willis"
+    },
+    "clientLine": {
+      "client": "Maritime Logistics Corp",
+      "line": "Marine Cargo"
+    },
+    "type": "Underwriter Referral",
+    "status": {
+      "label": "New",
+      "color": "3B82F6"
+    },
+    "created": "04/20/2025"
+  },
+  {
+    "originator": {
+      "initials": "PD",
+      "name": "Patrick Devenport"
+    },
+    "clientLine": {
+      "client": "GreenField Energy Ltd",
+      "line": "Environmental"
+    },
+    "type": "Loss Control Request",
+    "status": {
+      "label": "New",
+      "color": "3B82F6"
+    },
+    "created": "04/16/2025"
+  },
+  {
+    "originator": {
+      "initials": "AK",
+      "name": "Ana Killian"
+    },
+    "clientLine": {
+      "client": "NorthStar Financial Group",
+      "line": "D&O Liability"
+    },
+    "type": "Underwriter Referral",
+    "status": {
+      "label": "Pending Review",
+      "color": "FDD261"
+    },
+    "created": "04/22/2025"
+  },
+  {
+    "originator": {
+      "initials": "AK",
+      "name": "Ana Killian"
+    },
+    "clientLine": {
+      "client": "Alliance Healthcare Systems",
+      "line": "Medical Malpractice"
+    },
+    "type": "Email",
+    "status": {
+      "label": "Completed",
+      "color": "3BB979"
+    },
+    "created": "04/28/2025"
+  },
+  {
+    "originator": {
+      "initials": "MK",
+      "name": "Me"
+    },
+    "clientLine": {
+      "client": "QuantumTech Industries",
+      "line": "Product Liability"
+    },
+    "type": "Email",
+    "status": {
+      "label": "Completed",
+      "color": "3BB979"
+    },
+    "created": "04/20/2025"
+  },
+  {
+    "originator": {
+      "initials": "JB",
+      "name": "John Baker"
+    },
+    "clientLine": {
+      "client": "Stellar Corp",
+      "line": "General Liability"
+    },
+    "type": "Underwriter Referral",
+    "status": {
+      "label": "New",
+      "color": "3B82F6"
+    },
+    "created": "04/25/2025"
+  },
+  {
+    "originator": {
+      "initials": "CL",
+      "name": "Claire Lee"
+    },
+    "clientLine": {
+      "client": "Tech Innovations Inc.",
+      "line": "Professional Indemnity"
+    },
+    "type": "Loss Control Request",
+    "status": {
+      "label": "Pending Review",
+      "color": "FDD261"
+    },
+    "created": "04/29/2025"
+  },
+  {
+    "originator": {
+      "initials": "GW",
+      "name": "George Wilson"
+    },
+    "clientLine": {
+      "client": "Pinnacle Solutions",
+      "line": "Commercial Auto"
+    },
+    "type": "Email",
+    "status": {
+      "label": "New",
+      "color": "3B82F6"
+    },
+    "created": "05/01/2025"
+  },
+  {
+    "originator": {
+      "initials": "RS",
+      "name": "Robert Smith"
+    },
+    "clientLine": {
+      "client": "Alpha Industries",
+      "line": "Directors & Officers"
+    },
+    "type": "Underwriter Referral",
+    "status": {
+      "label": "Completed",
+      "color": "3BB979"
+    },
+    "created": "04/21/2025"
+  },
+  {
+    "originator": {
+      "initials": "EW",
+      "name": "Emily White"
+    },
+    "clientLine": {
+      "client": "Beta Systems",
+      "line": "Cyber Security"
+    },
+    "type": "Loss Control Request",
+    "status": {
+      "label": "New",
+      "color": "3B82F6"
+    },
+    "created": "04/30/2025"
+  },
+  {
+    "originator": {
+      "initials": "TL",
+      "name": "Thomas Lee"
+    },
+    "clientLine": {
+      "client": "Vanguard Technologies",
+      "line": "Errors & Omissions"
+    },
+    "type": "Email",
+    "status": {
+      "label": "Pending Review",
+      "color": "FDD261"
+    },
+    "created": "04/24/2025"
+  }
+]

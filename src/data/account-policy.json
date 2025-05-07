@@ -1,0 +1,32 @@
+[
+  {
+    "policyName": "Marine Cargo",
+    "premium": "$125.000",
+    "effDate": "6/30/2026",
+    "imageSrc": "/assets/accounts/marine.png"
+  },
+  {
+    "policyName": "General Liability",
+    "premium": "$175.000",
+    "effDate": "6/30/2026",
+    "imageSrc": "../../assets/accounts/general.png"
+  },
+  {
+    "policyName": "Workers Comp",
+    "premium": "$75.000",
+    "effDate": "---",
+    "imageSrc": "/assets/accounts/workers.png"
+  },
+  {
+    "policyName": "Property",
+    "premium": "$64.829.85",
+    "effDate": "---",
+    "imageSrc": "../assets/accounts/property.png"
+  },
+  {
+    "policyName": "Umbrella",
+    "premium": "$275.000",
+    "effDate": "12/03/2026",
+    "imageSrc": "../assets/accounts/umbrella.png"
+  }
+]

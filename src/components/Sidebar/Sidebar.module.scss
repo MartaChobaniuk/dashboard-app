@@ -1,0 +1,63 @@
+@use "../../utils/mixins" as mixin;
+@use "../../utils/variables" as var;
+
+.sidebar {
+  width: 100%;
+
+  &__header {
+    margin-bottom: 10px;
+    background-color: transparent;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    &--active {
+      background-color: #252A3D;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    color: var.$text-main;
+    cursor: pointer;
+  }
+
+  &__count {
+    font-size: 20px;
+    font-weight: 400;
+    color: var.$text-main;
+    background-color: #252a38;
+    padding: 10px;
+    border-radius: 5px;
+
+    &--active {
+      border: 1px solid var.$text-main;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #252A3D;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &--active {
+      color: var.$accent-color;
+    }
+  }
+}

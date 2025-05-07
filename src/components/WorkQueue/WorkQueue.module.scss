@@ -1,0 +1,118 @@
+@use "../../utils/mixins" as mixin;
+@use "../../utils/variables" as var;
+
+.queue {
+  width: 100%;
+  height: 560px;
+  border: 1px solid #313b54;
+  background-color: #1e2233;
+  color: var.$text-main;
+  border-radius: 20px;
+  padding: 20px;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  &__title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  &__tab {
+    background-color: #0c0f17;
+    padding: 8px 16px;
+    border-radius: 20px;
+
+    &--active {
+      background-color: var.$accent-color;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__head {
+    text-align: left;
+    height: 45px;
+    background-color: #252a3d;
+    color: #94a3b8;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__tr {
+    margin: 0 8px;
+  }
+
+  &__subtitle {
+    text-align: left;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  &__row {
+    height: 60px;
+    width: 80%;
+
+    &:nth-child(even) {
+      background-color: #293245;
+    }
+  }
+
+  &__column {
+    padding: 8px;
+  }
+
+  &__originator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__initials {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var.$text-main;
+    background: linear-gradient(to right, #1e40af 0%, #1e40af 30%);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__line {
+    font-size: 14px;
+    color: #94a3b8;
+  }
+
+  &__status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__status-dot {
+    width: 10px;
+    height: 10px;
+    padding: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  &__icon {
+    cursor: pointer;
+    margin: 0 8px;
+  }
+}

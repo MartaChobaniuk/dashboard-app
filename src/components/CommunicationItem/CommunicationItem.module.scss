@@ -1,0 +1,99 @@
+@use "../../utils/mixins" as mixin;
+@use "../../utils/variables" as var;
+
+.item {
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 15px;
+  border: 2px solid #1e40af;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 8px;
+  }
+
+  &__type {
+    background-color: #1e40af;
+    color: var.$text-main;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+
+  &__title {
+    color: var.$text-main;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #8A8C98; 
+  }
+
+  &__sender {
+    color: #8A8C98;
+  }
+
+  &__date {
+    color: #8A8C98;
+  }
+
+  &__message {
+    color: var.$text-main;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    font-size: 17px;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    font-size: 16px;
+    color: var.$text-main;
+    gap: 10px;
+  }
+
+  &__attachments {
+    display: flex;
+    align-items: center;
+    background-color: #3BB979;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  &__reply {
+    background-color: #3B82F6;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}
+
+.new {
+  background-color: #3B82F6;
+  border-left-color: #3b82f6;
+}
+
+.responded {
+  background-color:#3B82F6;
+  border-left-color: #3B82F6;
+}

@@ -1,0 +1,174 @@
+@use "../../utils/mixins" as mixin;
+@use "../../utils/variables" as var;
+
+.accounts {
+  width: 100%;
+  border: 1px solid #313b54;
+  background-color: #1e2233;
+  color: var.$text-main;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+
+  &__title {
+    font-size: 22px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var.$accent-color;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 0.5px solid var.$accent-color;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &--active {
+      background-color: var.$accent-color;
+      color: var.$button-text-black;
+    }
+  }
+
+  &__button-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var.$button-text-white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 25px;
+    border-radius: 20px;
+    background-color: var.$accent-color;
+    border: 0.5px solid var.$accent-color;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &--active {
+      background-color: transparent;
+      border: 0.5px solid var.$accent-color;
+      color: var.$accent-color;
+    }
+  }
+
+  &__input {
+    background-color: #232838;
+    color: #596275;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 0.5px solid #596275;
+
+    &:placeholder {
+      color: var.$text-main;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__head {
+    text-align-last: left;
+    height: 45px;
+    background-color: #252a3d;
+    color: var.$text-main;
+  }
+
+  &__subtitle {
+    text-align: left;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 0 8px;
+  }
+
+  &__row {
+    height: 80px;
+
+    &:nth-child(even) {
+      background-color: #293245;
+    }
+  }
+
+  &__column {
+    vertical-align: middle;
+    padding: 0 8px;
+
+    &--blue {
+      color: var.$accent-color;
+      padding: 0 8px;
+    }
+
+    &--appetite {
+      width: 50px;
+      padding: 0 8px;
+    }
+  }
+
+  &__type {
+    color: #94a3b8;
+    font-style: 12px;
+  }
+
+  &__ratio {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.9em;
+    color: var.$text-main;
+
+    &--black-text {
+      color: var.$button-text-black;
+    }
+  }
+
+  &__appetite {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.6em;
+    background-color: #2b3967;
+    color: var.$text-main;
+  }
+
+  &__tier {
+    border: 0.5px solid var.$accent-color;
+    padding: 8px 12px;
+    border-radius: 20px;
+    color: var.$accent-color;
+    font-size: 0.9em;
+  }
+
+  &__vinnability {
+    border: 0.5px solid var.$accent-color;
+    padding: 8px;
+    border-radius: 20px;
+    color: var.$accent-color;
+    font-size: 14px;
+    text-wrap: nowrap;
+  }
+}
